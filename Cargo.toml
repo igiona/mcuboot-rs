@@ -1,0 +1,9 @@
+[package]
+name = "mcuboot-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bitflags = "2.11.0"
+log = "0.4.29"
+thiserror = "2.0.18"
