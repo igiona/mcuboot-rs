@@ -1,0 +1,24 @@
+{
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    },
+    "[json]": {
+        "editor.formatOnSave": true,
+    },
+    "[jsonc]": {
+        "editor.formatOnSave": true
+    },
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml",
+        "editor.formatOnSave": true
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "rust-analyzer.check.command": "clippy",
+    "cSpell.words": [
+        "mcuboot"
+    ]
+}
