@@ -28,6 +28,17 @@ pub struct ImageMetadata {
 }
 
 /// Parses the provided mcuboot image and returns the corresponding `ImageMetadata`.
+/// Usage:
+/// 
+/// ```
+/// let path = std::path::Path::new("test/test_image.signed.bin");
+/// let image_metadata = mcuboot_rs::parse_image(&path).expect("Failed to parse image");
+/// println!("Image header:\n{:#?}", image_metadata.header);
+/// println!("Image sha256_hash: {:#?}", image_metadata.sha256_hash);
+/// println!("Image signature: {:#?}", image_metadata.signature);
+/// println!("Image signature_key_hash: {:#?}", image_metadata.signature_key_hash);
+/// ``` 
+/// 
 pub fn parse_image(path: impl AsRef<Path>) -> Result<ImageMetadata, Error> {
     use std::io::Read;
 
